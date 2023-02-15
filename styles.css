@@ -465,7 +465,7 @@
 
 
 /* Desktop */
-@media only screen and (min-width: 1446px){
+@media only screen and (min-width: 1425px){
 
   #header > #topbar{
     z-index: 1;
