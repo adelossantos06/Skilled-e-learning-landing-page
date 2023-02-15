@@ -166,7 +166,7 @@
   /* Course boxes and heading grouped */
   .courses-container{
     position: absolute;
-    background-color: var(--color-gradient-1);
+    background: var(--color-gradient-2);
     width: 23.438rem; 
     height: 105.938rem;
     margin-top: 47.75rem;
@@ -516,7 +516,7 @@
 
   .courses-container{
     position: absolute;
-    background-color: var(--color-gradient-1);
+    background: var(--color-gradient-2);
     width: 100%; 
     margin-top: 47.75rem;
     display: flex;
