@@ -1,0 +1,633 @@
+:root{
+    --color-primary-1: #13183F;
+
+    --color-secondary-1: #83869A;
+
+    --color-gradient-1: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    --color-gradient-2: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    --color-gradient-3: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    }
+
+    
+    /*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+
+  *{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+   /* top bar skilled and get started button  */
+  #header > #topbar{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 343px;
+    height: 48px;
+    margin-left: 16px;
+    margin-top: 16px;
+    padding-right: 16px;
+    width: 95%;
+    max-width: 88%;
+  }
+
+  .logo{
+    color: #13183F;
+    width: 89px;
+  }
+
+  .button{
+    background-color: #13183F;
+    border-radius: 28px;
+    color: white;
+    border: none;
+    height: 48px;
+    width: 140px;
+  }
+
+
+  /* Title and title paragraph  */
+  .top-header{
+    position: absolute;
+    margin: 6.375rem 1rem 0rem 1rem ;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: var(--color-primary-1);
+    line-height: 3.125rem;
+  }
+
+  .top-text{
+    position: absolute;
+    width: 21.438rem;
+    height: 4.875;
+    font-weight: 500;
+    line-height: 1.625rem;
+    color: var(--color-secondary-1);
+    font-size: .9rem;
+    margin-top: 14.313rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+
+  /* Get Started Button  */
+  .mid-button{
+    position: absolute;
+    background: var(--color-gradient-1);
+    border-radius: 1.969rem;
+    border: none;
+    color: white;
+    width: 10.438rem;
+    height: 3.5rem;
+    margin: 21rem 12rem 0 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+
+  /* Image of girl with mug */
+  #img1{
+    position: absolute;
+    width: 20.438rem;
+    height: 18.813rem;
+    margin: 27.063rem 1.5rem 0 1.5rem;
+  }
+
+
+  /* Check out courses text container */
+  #text-box-header{
+    position: absolute;
+    width: 21.438rem;
+    height: 7.5rem;
+    background: var(--color-gradient-1);
+    border-radius: 0.625;
+    margin: 0rem 1rem 0 1rem;
+  }
+
+  #text-box-header > p{
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 2rem;
+    color: white;
+    margin: 1.5rem 1.813rem 2rem 1.75rem;
+}
+
+  /* Course boxes and heading grouped */
+  .courses-container{
+    position: absolute;
+    background-color: var(--color-gradient-1);
+    width: 23.438rem; 
+    height: 105.938rem;
+    margin-top: 47.75rem;
+}
+
+  /* course icon image*/
+  #icon{
+    position: absolute;
+    width: 3.5rem;
+    margin: -1.5rem 16.938rem 1.5rem 0;
+}
+
+  /* course text box */
+  .course-box{
+    background: white;
+    border-radius: 0.625rem;
+    box-shadow: 0rem 1.563rem 3.125rem rgba(6, 22, 141, 0.0442381);
+    width: 21.438rem;
+    height: 16.188rem;
+    margin: 2.5rem 1rem 1rem 1rem;
+}
+
+  /* course boxes grouped */
+  #course-boxes{
+    position: absolute;
+    margin-top: 7rem;
+}
+
+  /* css for all of the course title headings */
+  #course-title{
+    margin-top: 3.125rem;
+    margin-right: 14.125rem;
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: var(--color-primary-1);
+}
+
+  /* css for all of the course desctiption paragraphs */
+  #course-description{
+    font-weight: 500;
+    font-size: .93rem;
+    line-height: 1.625rem;
+    color: var(--color-secondary-1);
+    margin-top: 6.063rem;
+    margin-right: 2.563rem;
+    margin-bottom: 1.5rem;
+}
+
+  /* css for all of the course get started lines */
+  #course-getstarted{
+    font-weight: 43.75rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-top: 12.438rem;
+    color: #F74780;
+}
+
+  /* gives every item within the course container the correct margin spacing */
+#course-title, #icon, #course-description, #course-getstarted{
+    position: absolute;
+    margin-left: 3rem;
+    margin-right: 2.563rem;
+}
+
+/* design get started need additional spacing */
+#design > #course-getstarted{
+    margin-top: 13.188rem;
+}
+
+/* business description text did not format correctly with previous font-size */
+#business > #course-description{
+    font-size: .92rem;
+}
+
+/* Footer with logo and Get Started Button */
+#footer{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 23.438rem;
+    height: 7.5rem;
+    background: var(--color-primary-1);
+    margin-top: 155rem;
+    width: 100%;
+}
+
+#footer > p{
+    font-size: 1.75rem;
+    color: white;
+    width: 5.563rem;
+    height: 2.188rem;
+    margin-top: 2.25rem;
+    margin-left: 1rem;
+}
+
+#footer-button{
+    width: 8.75rem;
+    height: 3rem;
+    background: var(--color-gradient-3);
+    border-radius: 1.75rem;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    margin-top: 2.25rem;
+    margin-right: 1rem;
+}
+
+@media only screen and (min-width: 365px){
+  .tablet-screen{
+    display: none;
+  }
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 760px) {
+
+    .top-header{
+        margin: 10.688rem 25.188rem 0rem 2.438rem;
+        font-size: 2.375rem;
+      }
+
+      .top-text{
+        width: 24.875rem;
+        height: 4.875rem;
+        margin: 18.563rem 20.688rem 0 1.7rem;
+      }
+
+      .mid-button{
+        margin: 24.938rem 35.125rem 0 2.438rem;
+      }
+
+      #img1{
+        position: absolute;
+        margin-left: 9.938rem;
+        height: 39.688rem;
+        width: auto;
+        margin-top: -5.758rem;
+        object-fit: none;
+        object-position: -245% 5%;
+      }
+
+      .tablet-screen{
+        display: contents;
+      }
+
+      .mobile-screen{
+        display: none;
+      }
+
+      .courses-container{
+        display: flex;
+        position: absolute;
+        width: 48rem;
+        height: 62.438rem;
+        margin-top: 40.625rem;
+      }
+
+      #text-box-header{
+        width: 21.188rem;
+        height: 16.188rem;
+        margin-top: 0rem;
+        margin-left: 2.438rem;
+      }
+
+      #text-box-header > p{
+        margin: 3.5rem 1.313rem 8.688rem 2rem;
+     }
+
+      .course-box{
+        width: 21.25rem;
+        height: 17.688rem;
+      }
+
+      #animation{
+        margin-left: 24.25rem;
+        margin-top: -7.188rem;
+        width: 21.25rem;
+        height: 16.188rem;
+      }
+
+      #animation > #icon{
+        margin-left: 2rem;
+      }
+
+      #animation > #course-title{
+        margin-left: 2rem;
+      }
+
+      #animation > #course-description{
+        margin-top: 5.625rem;
+        margin-left: 32px;
+      }
+
+      #animation > #course-getstarted{
+        margin-top: 190px;
+        margin-left: 2rem;
+      }
+
+      #design{
+        margin-left: 2.438rem;
+        margin-top: 3.125rem;
+      }
+
+      #design > #icon{
+        margin-left: 2rem;
+      }
+
+      #design > #course-title{
+        margin-left: 2rem;
+      }
+
+      #design > #course-description{
+        width: 17.875rem;
+        height: 4.875rem;
+        margin: 6.063rem 1.313rem 5.25rem 2rem;
+      }
+
+      #design > #course-getstarted{
+        margin-left: 2rem;
+        margin-top: 13.75rem;
+      }
+
+      #photography{
+        margin-left: 24.313rem;
+        margin-top: -18.75rem;
+      }
+
+      #photography > #icon{
+        margin-left: 2rem;
+      }
+
+      #photography > #course-title{
+        margin-left: 2rem;
+      }
+
+      #photography > #course-description{
+        margin-left: 2rem;
+      }
+
+      #photography > #course-getstarted{
+        margin-top: 13.75rem;
+        margin-left: 2rem;
+      }
+
+      #crypto{
+        margin-left: 2.438rem;
+      } 
+
+      #crypto > #icon{
+        margin-left: 2rem;
+      }
+
+      #crypto > #course-title{
+        margin-left: 2rem;
+      }
+
+      #crypto > #course-description{
+        width: 17.875rem;
+        margin: 6.563rem 1.313rem 5.25rem 2rem;
+      }
+
+      #crypto > #course-getstarted{
+        margin-left: 2rem;
+        margin-top: 13.438rem;
+      }
+
+      #business{
+        margin-left: 24.313rem;
+        margin-top: -18.688rem;
+      }
+
+      #business > #icon{
+        margin-left: 2rem;
+      }
+
+      #business > #course-title{
+        margin-left: 2rem;
+      }
+
+      #business > #course-description{
+        margin-top: 6.25rem;
+        margin-left: 32px;
+      }
+
+      #business > #course-getstarted{
+        margin-top: 215px;
+        margin-left: 2rem;
+      }
+
+      #footer{
+        margin-top: 103.063rem;
+      }
+}
+
+
+
+/* Desktop */
+@media only screen and (min-width: 1446px){
+
+  #header > #topbar{
+    z-index: 1;
+    margin-left: 10.362rem;
+    margin-top: 1.5rem;
+    padding-right: 12.5rem;
+  }
+
+
+  .button:hover{
+    background: #666CA3;
+  }
+
+  .top-header{
+    width: 28.563rem;
+    height: 8.938rem;
+    font-size: 3.5rem;
+    margin: 13.25rem 51.125rem 77.125rem 10.313rem;
+  }
+
+  .top-text{
+    width: 31.25rem;
+    height: 5.25rem;
+    font-size: 18px;
+    margin: 21.25rem 51.875rem 83.563rem 9.375rem;
+  }
+
+  .mid-button{
+    width: 10.438rem;
+    height: 3.938rem;
+    margin: 28.438rem 69.25rem 77.125rem 10rem;
+  }
+
+  .mid-button:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);;
+  }
+
+  #img1{
+    position: absolute;
+    margin-left: 40rem;
+    height: 46.875rem;
+    width: auto;
+    margin-top: 0rem;
+    object-fit: none;
+    /*object-position: -5% 105%;*/
+    object-position: -75% 95%;
+  }
+
+  .courses-container{
+    position: absolute;
+    background-color: var(--color-gradient-1);
+    width: 100%; 
+    margin-top: 47.75rem;
+    display: flex;
+    justify-content: center;
+}
+
+  #text-box-header{
+    width: 21.875rem;
+    height: 322px;
+    margin-top: 0rem;
+    margin-left: -48.688rem;
+  }
+
+  #animation{
+    margin-left: 27.813rem;
+    margin-top: -7rem;
+    width: 21.875rem;
+    height: 20.125rem;
+  }
+
+  #animation > #course-description{
+    margin-top: 6.188rem;
+    margin-left: 2rem;
+    width: 16.75rem;
+    height: 7rem;
+  }
+
+  #animation > #course-getstarted{
+    margin-top: 15.625rem;
+  }
+
+  #design{
+    width: 21.875rem;
+    height: 20.125rem;
+    margin-top: -21.188rem;
+    margin-left: 53.438rem;
+  }
+
+  #design > #course-getstarted{
+    margin-top: 15.5rem;
+  }
+
+  #photography{
+    width: 21.875rem;
+    height: 20.125rem;
+    margin-top: 3.438rem;
+    margin-left: 2.813rem;
+  }
+
+  #photography > #course-description{
+    width: 16.75rem;
+    height: 7rem;
+  }
+
+  #crypto{
+    width: 21.875rem;
+    height: 20.125rem;
+    margin-top: -21.375rem;
+    margin-left: 27.875rem;
+  }
+
+  #business{
+    width: 21.875rem;
+    height: 20.125rem;
+    margin-top: -20.938rem;
+    margin-left: 53.5rem;
+  }
+
+  #course-getstarted:hover{
+    color: #FFA7C3;
+  }
+}
+
+@media only screen and (min-width: 1550px){
+  .top-text{
+    margin: 21.25rem 51.875rem 83.563rem 9.375rem;
+  }
+
+  #img1{
+    position: relative;
+    margin-left: 65.625rem;
+    height: 46.875rem;
+    width: auto;
+    margin-top: 0rem;
+    object-fit: none;
+    /*object-position: -5% 105%;*/
+    object-position: -75% 95%;
+  }
+
+  .courses-container{
+    margin-top: 0;
+  }
+
+  #courses-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  #footer{
+    margin-top: 62.438rem;
+  }
+}
+
+  @media only screen and (min-width: 1555px){
+
+    #img1{
+      position: relative;
+      margin-top: -2%;
+      margin-left: 67%;
+      object-position: -5% 95%;
+    }
+  }
+  
